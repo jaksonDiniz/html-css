@@ -182,6 +182,7 @@ aside h3{
     color: white;
     padding: 10px;
     margin: -10px -10px 0px -10px ;
+    border-radius: 10px 10px 0px 0px;
 }
 
 aside > ul{
@@ -194,4 +195,7 @@ aside > ul{
 footer {
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
 }

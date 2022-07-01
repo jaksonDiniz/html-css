@@ -19,9 +19,21 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+
+        tbody > tr:nth-child(2n){ /* odd ou even */
+            background-color: lightgrey;
         }
 
         td.num {
@@ -36,16 +48,18 @@
     <!-- 
         ANATOMIA PAA TABELAS GRANDES 
         TABLE
+        CAPTION = TITULO DA TABELA
             THEAD
                 TR, TD, TH
             TBODY
                 TR, TD, TH
     --> 
     <table>
+        <caption>População das unidades</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -64,7 +78,7 @@
         </tbody>    
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>000</td>
             </tr>
         </tfoot>
